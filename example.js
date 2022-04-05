@@ -84,7 +84,61 @@
 
 // arrow function == shorter syntax of writing functions
 
-function addTwo(a,b){
-       console.log(a+b)
-     };
-const addTwo =(a, b) => console.log (a + b);
+// function addTwo(a,b){
+//        console.log(a+b)
+//      };
+// const addTwo =(a, b) => console.log (a + b);
+
+
+// Personal Notes on arrow functions
+// Simole way to declare arrow functions
+//  let func = (arg1,arg2,......,argN) => expression;
+// tit creates a function func that accepts arguments arg1...argN on the right side with their use and returns its results
+
+// let sum =(a, b) => a + b ;
+// the arrow function is a shorter form of:
+// let sum = function(a, b){
+  // return a + b;
+  // };
+// alert ( sum(1, 2));  // 3
+
+// let double = n => n * 2;
+// // its the same as let double = function (n){return n * 2}
+// alert(double(3));  // 6 
+
+// if there are no arguments parantheses are empy,but they must be present
+// let sayHi =   () => alert("Hello there Welcome to Javascript!");
+
+// sayHi();
+// arrow functions can be used in the same way as FUnction Expressions
+// For instance to dynamicallly create a function
+// example of a singke arrow function
+// let age = prompt("What is Your Age?" , );
+// let welcome = (age < 18 ) ?
+// () => alert('Hello') :
+// () => alert("Greetings!");
+
+// welcome();
+
+// Multiline arrow functions
+// example of a multiline arrow function
+// let sum = (a, b) => { // the curly braces opens a multiline function
+// let result = a + b ;
+// return result;
+// };
+
+// alert(sum(1, 2) ); //3
+let ask =prompt("Do you know Javascript?" );{
+let   yes  =  alert('Welcome to Javascript');
+ let  no   = alert("We will let you know");
+
+};
+
+// let  ask = prompt("Do you know Javascript", yes, no){
+//   if(confirm(question)) yes() ;
+//   else no ();
+// }
+// ask (
+//   () => alert ("Welcome To Javascript"),
+//   () => alert ('We will let You know')
+// )
